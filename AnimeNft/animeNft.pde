@@ -41,7 +41,7 @@ int frames = 2;
 
 void setup(){
   
-  size(600, 600);
+  size(448, 448);
   
 }
 
