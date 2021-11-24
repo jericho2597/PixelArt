@@ -71,7 +71,10 @@ class Loader {
     // One line per hair layer to be loaded into collection
     loadApparel("layers/Apparel/blueshirt.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadApparel("layers/Apparel/greenshirt.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
-    
+    loadApparel("layers/Apparel/brownblazer.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/mafia.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/singlet.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+
   }
 
   void loadAllMouths() {
