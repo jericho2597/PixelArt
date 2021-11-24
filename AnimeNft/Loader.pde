@@ -46,7 +46,6 @@ class Loader {
     // One line per hair layer to be loaded into collection
     
     // EXAMPLE
-    loadSilhouette("layers/Skin/lightskin.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadSilhouette("layers/Skin/yellowskin.png", "s2", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadSilhouette("layers/Skin/lighterskin.png", "s3", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadSilhouette("layers/Skin/darkskin.png", "s4", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
