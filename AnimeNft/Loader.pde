@@ -61,6 +61,7 @@ class Loader {
     loadHair("layers/Hair/Hair-bandana-red.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/Hair-messy-yellow.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/Hair-messy-silver.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/Hair-red-middle-part.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
   }
   
   void loadAllEyes() {
