@@ -109,6 +109,7 @@ class Loader {
     loadApparel("layers/Apparel/SIlhouette-red-buttoned-white-under.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadApparel("layers/Apparel/SIlhouette-dogtag.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadApparel("layers/Apparel/SIlhouette-knife-stab.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-white-tee-knife-stab.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
 
   }
 
