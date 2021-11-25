@@ -61,7 +61,6 @@ class Loader {
     loadHair("layers/Hair/Hair-bandana-red.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/Hair-messy-yellow.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/Hair-messy-silver.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
-    loadHair("layers/Hair/Hair-red-middle-part.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/blondmidlength.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/bluemidlength.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/darkmidlength.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
@@ -69,6 +68,9 @@ class Loader {
     loadHair("layers/Hair/greybeanie.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/mohawkblack.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/mohawkblonde.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/blondelong.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/brownlong.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/greybuzz.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
 
 }
   
