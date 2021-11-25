@@ -100,6 +100,11 @@ class Loader {
     loadApparel("layers/Apparel/SIlhouette-demin-red-chain.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadApparel("layers/Apparel/SIlhouette-purple-blazer.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadApparel("layers/Apparel/SIlhouette-shirtless-chain.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-black-buttoned-pink-under.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-black-tee-silver-chain.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-blue-buttoned-white-under.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-khaki-tee-silver-chain.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadApparel("layers/Apparel/SIlhouette-red-buttoned-white-under.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
 
   }
 
