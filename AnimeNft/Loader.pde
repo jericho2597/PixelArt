@@ -67,6 +67,8 @@ class Loader {
     loadHair("layers/Hair/darkmidlength.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/greenbeanie.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadHair("layers/Hair/greybeanie.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/mohawkblack.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Hair/mohawkblonde.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
 
 }
   
@@ -78,7 +80,11 @@ class Loader {
     loadEyes("layers/Eyes/blondefullyblazed.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});  
     loadEyes("layers/Eyes/smalleyes.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
     loadEyes("layers/Eyes/sus.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
-  }
+    loadHair("layers/Eyes/blackglasses.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Eyes/brownshadeglasses.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+    loadHair("layers/Eyes/bluespecs.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});
+
+}
 
   void loadAllApparel() {
     // One line per hair layer to be loaded into collection
@@ -103,6 +109,8 @@ class Loader {
     loadMouth("layers/Mouth/goatee.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});    
     loadMouth("layers/Mouth/blondegoatee.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});    
     loadMouth("layers/Mouth/cigaretteinmouth.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});    
+    loadMouth("layers/Mouth/johnwick.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});    
+    loadMouth("layers/Mouth/blondbeard.png", "s1", new ArrayList<String>(Arrays.asList(new String[]{})), new String[]{});    
   }
 
   void loadAllMasks() {
