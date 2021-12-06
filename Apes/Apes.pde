@@ -43,6 +43,8 @@ void setup(){
   
   size(448, 448);
   
+  background(200);
+  
 }
 
 // BEING TO LOAD IN ALL DATA
@@ -50,14 +52,14 @@ Loader data = new Loader();
 
 void draw(){
   ArrayList<String> order = new ArrayList<String>();
-  order.add("background");
-  order.add("silhouette");
+  order.add("skin");
   order.add("apparel");
   order.add("eyes");
   order.add("mouth");
-  order.add("hair");
   
   for(int i = 0; i < totalPopulation; i++){
+    clear();
+    background(200);
     ArrayList<Rule> rules = new ArrayList<Rule>();
     ArrayList<Layer> layers = new ArrayList<Layer>();
     for(String featureName: order){
