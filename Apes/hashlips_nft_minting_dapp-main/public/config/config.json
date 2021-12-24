@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x4a520deea9204c7f7aef932b18548d187f6c68f2",
+  "SCAN_LINK": "https://etherscan.io/token/0x4a520deea9204c7f7aef932b18548d187f6c68f2",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "LoFi Ape Society",
+  "SYMBOL": "LFAS",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.05,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "OpenSea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+  "SHOW_BACKGROUND": false
+}
