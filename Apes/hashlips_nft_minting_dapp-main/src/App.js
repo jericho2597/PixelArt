@@ -5,10 +5,12 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import { HashLink } from 'react-router-hash-link';
 import styled from "styled-components";
+import VerticalTimeline from './components'
+import { events } from "./components/events"
+import background from './yes.gif'
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
-
 export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
@@ -195,7 +197,7 @@ function App() {
   }, [blockchain.account]);
 
   return (
-        <s.Screen>
+        <s.Screen image={background}>
           <s.Container
             flex={1}
             ai={"center"}
@@ -301,6 +303,7 @@ function App() {
               >
                 Roadmap
               </s.TextTitle>
+              <VerticalTimeline events={events} interval={5000}/>
             </s.Container>
           </s.Container>
 
