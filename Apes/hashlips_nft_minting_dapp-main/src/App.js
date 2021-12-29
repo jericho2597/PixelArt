@@ -8,6 +8,8 @@ import styled from "styled-components";
 import VerticalTimeline from './components'
 import { events } from "./components/events"
 import background from './yes.gif'
+import "./styles/textBanner.css"
+import "./styles/timeline.css"
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -196,9 +198,22 @@ function App() {
     getData();
   }, [blockchain.account]);
 
+  // $(function(){
+  //   $().timelinr({
+  //     orientation: 	'vertical',
+  //     issuesSpeed: 	300,
+  //     datesSpeed: 	100,
+  //     arrowKeys: 		'true',
+  //     startAt:		1
+  //   })
+  // });
+
   return (
         <s.Screen image={background}>
-          <s.Container
+        <div class="skills">
+              ANNOUNCEMENT: Lofi Ape Society minting date 9:00am (GMT-8) 2nd January 2022
+        </div>          
+        <s.Container
             flex={1}
             ai={"center"}
             style={{ minWidth: 400,width: '60%', padding: 24, backgroundColor: "var(--primary)" }}
@@ -303,7 +318,47 @@ function App() {
               >
                 Roadmap
               </s.TextTitle>
-              <VerticalTimeline events={events} interval={5000}/>
+              {/* <VerticalTimeline events={events} interval={5000}/> */}
+              <div id="timeline">
+              <ul id="dates">
+                <li><a href="#1900" class="selected">12/21</a></li>
+                <li><a href="#1930">1930</a></li>
+                <li><a href="#1944">1944</a></li>
+                <li><a href="#1950">1950</a></li>
+                <li><a href="#1971">1971</a></li>
+                <li><a href="#1977">1977</a></li>
+                <li><a href="#1989">1989</a></li>
+                <li><a href="#1999">1999</a></li>
+                <li><a href="#2001">2001</a></li>
+                <li><a href="#2011">2011</a></li>
+              </ul>
+              <ul id="issues">
+                <li id="1900" class="selected">
+                  <img src="1.png" />
+                  <h1>22/12/21</h1>
+                  <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                </li>
+                <li id="1930">
+                  <img src="2.png" />
+                  <h1>02/01/22</h1>
+                  <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                </li>
+                <li id="1944">
+                  <img src="3.png" />
+                  <h1>1944</h1>
+                  <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                </li>
+                <li id="1950">
+                  <img src="4.png" />
+                  <h1>1950</h1>
+                  <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                </li>
+              </ul>
+              <div id="grad_top"></div>
+              <div id="grad_bottom"></div>
+              <a href="#" id="next">+</a>
+              <a href="#" id="prev">-</a>
+            </div>
             </s.Container>
           </s.Container>
 
