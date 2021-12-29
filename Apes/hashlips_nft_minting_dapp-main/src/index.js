@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import ReactDOM from "react-dom";
 import {
   BrowserRouter,
@@ -10,6 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./styles/reset.css";
+import $ from 'jquery';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -24,6 +25,7 @@ ReactDOM.render(
       </Route>
     </Routes>
   </BrowserRouter>,
+
   document.getElementById("root")
 );
 

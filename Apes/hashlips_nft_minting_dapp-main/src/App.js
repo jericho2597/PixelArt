@@ -10,6 +10,9 @@ import { events } from "./components/events"
 import background from './yes.gif'
 import "./styles/textBanner.css"
 import "./styles/timeline.css"
+import "./styles/imageCarousel.css"
+import $ from 'jquery'
+
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -198,21 +201,13 @@ function App() {
     getData();
   }, [blockchain.account]);
 
-  // $(function(){
-  //   $().timelinr({
-  //     orientation: 	'vertical',
-  //     issuesSpeed: 	300,
-  //     datesSpeed: 	100,
-  //     arrowKeys: 		'true',
-  //     startAt:		1
-  //   })
-  // });
-
   return (
         <s.Screen image={background}>
+        <div style={{height:10}}></div>
         <div class="skills">
               ANNOUNCEMENT: Lofi Ape Society minting date 9:00am (GMT-8) 2nd January 2022
-        </div>          
+        </div>
+        <div style={{height:10}}></div>
         <s.Container
             flex={1}
             ai={"center"}
@@ -227,28 +222,32 @@ function App() {
             ai={"center"}
             style={{ minWidth: 400,width: '60%', padding: 24, backgroundColor: "var(--secondary)" }}
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
-          >
-            <div style={{display: "flex", flexDirection: "row", paddingLeft: "10px"}}>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                <img width={200} height={200} src={"5.png"} style={{margin: 2}}/>
-                <img width={200} height={200} src={"3.png"} style={{margin: 2}}/>
-              </div>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                <img width={200} height={200} src={"4.png"} style={{margin: 2}}/>
-                <img width={200} height={200} src={"5.png"} style={{margin: 2}}/>
-              </div>
-            </div>
-            <div style={{display: "flex", flexDirection: "row", paddingLeft: "10px"}}>
-              <div style={{display: "flex", flexDirection: "row"}}>
-                <img width={200} height={200} src={"5.png"} style={{margin: 2}}/>
-                <img width={200} height={200} src={"3.png"} style={{margin: 2}}/>
-              </div>
-              <div style={{display: "flex", flexDirection: "row"}}s>
-                <img width={200} height={200} src={"4.png"} style={{margin: 2}}/>
-                <img width={200} height={200} src={"5.png"} style={{margin: 2}}/>
-              </div>
-            </div>
+          > 
             <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+            <div style={{height:30}}></div>
+            <div class="container">
+        <div class="carousel">
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+        </div>
+      </div>
+      <div style={{height:80}}></div>
               <s.TextTitle
                 style={{ textAlign: "left", color: "var(--para-header)" }}
               >
@@ -321,19 +320,13 @@ function App() {
               {/* <VerticalTimeline events={events} interval={5000}/> */}
               <div id="timeline">
               <ul id="dates">
-                <li><a href="#1900" class="selected">12/21</a></li>
-                <li><a href="#1930">1930</a></li>
+                <li><a href="#1900">12/21</a></li>
+                <li><a href="#1930">01/22</a></li>
                 <li><a href="#1944">1944</a></li>
                 <li><a href="#1950">1950</a></li>
-                <li><a href="#1971">1971</a></li>
-                <li><a href="#1977">1977</a></li>
-                <li><a href="#1989">1989</a></li>
-                <li><a href="#1999">1999</a></li>
-                <li><a href="#2001">2001</a></li>
-                <li><a href="#2011">2011</a></li>
               </ul>
               <ul id="issues">
-                <li id="1900" class="selected">
+                <li id="1900">
                   <img src="1.png" />
                   <h1>22/12/21</h1>
                   <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>

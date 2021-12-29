@@ -27,6 +27,19 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.timelinr-0.9.7.js"></script>
+    <script>
+      $(function(){
+			$().timelinr({
+				orientation: 	'vertical',
+				issuesSpeed: 	300,
+				datesSpeed: 	100,
+				arrowKeys: 		'true',
+				startAt:		3
+			})
+		});
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
