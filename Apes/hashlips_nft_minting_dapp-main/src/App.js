@@ -76,7 +76,7 @@ export const ResponsiveWrapper = styled.div`
 export const StyledLogo = styled.img`
   width: 300px;
   @media (min-width: 767px) {
-    width: 500px;
+    width: 700px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -211,7 +211,7 @@ function App() {
         <s.Container
             flex={1}
             ai={"center"}
-            style={{ minWidth: 400,width: '60%', padding: 24, backgroundColor: "var(--primary)" }}
+            style={{ minWidth: 800,width: '60%', padding: 24, backgroundColor: "#ffffff00" }}
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
             <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
@@ -437,10 +437,11 @@ function App() {
                             color: "var(--accent-text)",
                           }}
                         >
-                          Connect to the {CONFIG.NETWORK.NAME} network
+                          {/* Connect to the {CONFIG.NETWORK.NAME} network */}
+                          Minting begins in:
                         </s.TextDescription>
                         <s.SpacerSmall />
-                        <StyledButton
+                        {/* <StyledButton
                           onClick={(e) => {
                             e.preventDefault();
                             dispatch(connect());
@@ -448,7 +449,8 @@ function App() {
                           }}
                         >
                           CONNECT
-                        </StyledButton>
+                        </StyledButton> */}
+                        <p id="demo"></p>
                         {blockchain.errorMsg !== "" ? (
                           <>
                             <s.SpacerSmall />
