@@ -11,6 +11,7 @@ import background from './yes.gif'
 import "./styles/textBanner.css"
 import "./styles/timeline.css"
 import "./styles/imageCarousel.css"
+import "./styles/apeCard.css"
 import $ from 'jquery'
 
 
@@ -73,10 +74,19 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
-export const StyledLogo = styled.img`
+export const StyledTitle = styled.img`
   width: 300px;
   @media (min-width: 767px) {
     width: 700px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
+export const StyledLogo = styled.img`
+  width: 300px;
+  @media (min-width: 767px) {
+    width: 300px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -208,13 +218,14 @@ function App() {
               ANNOUNCEMENT: Lofi Ape Society minting date 9:00am (GMT-8) 2nd January 2022
         </div>
         <div style={{height:10}}></div>
+
         <s.Container
             flex={1}
             ai={"center"}
             style={{ minWidth: 800,width: '60%', padding: 24, backgroundColor: "#ffffff00" }}
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
-            <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+            <StyledTitle alt={"logo"} src={"/config/images/logo.png"} />
           </s.Container>
 
           <s.Container
@@ -248,11 +259,8 @@ function App() {
         </div>
       </div>
       <div style={{height:80}}></div>
-              <s.TextTitle
-                style={{ textAlign: "left", color: "var(--para-header)" }}
-              >
-                Welcome to the LoFi Ape Society
-              </s.TextTitle>
+            <StyledLogo alt={"logo"} src={"/config/images/welcome.png"} />
+            <br></br>
               <s.TextDescription
                 style={{
                   textAlign: "justify",
@@ -271,11 +279,8 @@ function App() {
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
             <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-              <s.TextTitle
-                style={{ textAlign: "left", color: "var(--accent)" }}
-              >
-                Generation
-              </s.TextTitle>
+            <StyledLogo alt={"logo"} src={"/config/images/generation.png"} />
+            <br></br>
               <s.TextDescription
                 style={{
                   textAlign: "justify",
@@ -303,6 +308,53 @@ function App() {
                 The LoFi Apes are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. Minting an ape costs 0.05 ETH.
               </s.TextDescription>
             </s.Container>
+            <div class="centerflipcards">
+            <div class="square-flip">
+              <div class='square'>
+                <div class="square-container">
+                  <div class="align-center"><img src="7138.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+              <div class='square2'>
+                <div class="square-container2">
+                <div class="align-center"><img src="card1.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+            </div>
+
+            <div class="square-flip">
+              <div class='square'>
+                <div class="square-container">
+                  <div class="align-center"><img src="7151.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+              <div class='square2'>
+                <div class="square-container2">
+                <div class="align-center"><img src="card2.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+            </div>
+
+            <div class="square-flip">
+              <div class='square'>
+                <div class="square-container">
+                  <div class="align-center"><img src="7191.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+              <div class='square2'>
+                <div class="square-container2">
+                <div class="align-center"><img src="card3.png" class="boxshadow"/></div>
+                </div>
+                <div class="flip-overlay"></div>
+              </div>
+            </div>
+            
+          </div>
           </s.Container>
 
           <s.Container
@@ -312,11 +364,7 @@ function App() {
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
             <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-              <s.TextTitle
-                style={{ textAlign: "left", color: "var(--para-header)" }}
-              >
-                Roadmap
-              </s.TextTitle>
+            <StyledLogo alt={"logo"} src={"/config/images/roadmap.png"} />
               {/* <VerticalTimeline events={events} interval={5000}/> */}
               <div id="timeline">
               <ul id="dates">
@@ -347,8 +395,6 @@ function App() {
                   <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
                 </li>
               </ul>
-              <div id="grad_top"></div>
-              <div id="grad_bottom"></div>
               <a href="#" id="next">+</a>
               <a href="#" id="prev">-</a>
             </div>
@@ -361,6 +407,7 @@ function App() {
             style={{ minWidth: 400,width: '60%', padding: 24, backgroundColor: "var(--primary)" }}
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
+            <StyledLogo alt={"logo"} src={"/config/images/minting.png"} />
             <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
               <s.SpacerLarge />
               <s.Container
